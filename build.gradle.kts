@@ -10,13 +10,15 @@ repositories {
     mavenCentral()
 }
 
+
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2021.3") // 编译的IDEA版本
     type.set("IC") // Target IDE Platform 支持的目标IDE平台: IC表示社区版, IU表示商用版
 
-    plugins.set(listOf(/* Plugin Dependencies */)) // 依赖的插件
+//    plugins.set(listOf(/* Plugin Dependencies */)) // 依赖的插件
+    plugins.set(listOf("mobi.hsz.idea.gitignore:4.4.0"))
 }
 
 tasks {
@@ -34,6 +36,7 @@ tasks {
         sinceBuild.set("213")
         untilBuild.set("231.*")
     }
+
 
     // 插件签名
     signPlugin {

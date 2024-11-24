@@ -1,4 +1,4 @@
-package com.example.myfirstplugin;
+package com.example.simpledemo;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
